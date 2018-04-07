@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CacheManager.h"
+#import "ImageViewController.h"
+@interface ViewController : UIViewController <UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
-@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UICollectionView *imageCollectionView;
+@property (strong,nonatomic) NSMutableArray *imageURLSArray;
+@property (strong,nonatomic) CacheManager *imageCache;
+@property (weak, nonatomic) IBOutlet UIView *activityIndicatorParentView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 
 @end

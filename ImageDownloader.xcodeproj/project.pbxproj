@@ -15,6 +15,11 @@
 		A98DE8DC20785428008E2279 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A98DE8DB20785428008E2279 /* main.m */; };
 		A98DE8E620785428008E2279 /* ImageDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A98DE8E520785428008E2279 /* ImageDownloaderTests.m */; };
 		A98DE8F120785428008E2279 /* ImageDownloaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A98DE8F020785428008E2279 /* ImageDownloaderUITests.m */; };
+		A98DE9012078559D008E2279 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A98DE8FF2078559D008E2279 /* CollectionViewCell.m */; };
+		A98DE9022078559D008E2279 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98DE9002078559D008E2279 /* CollectionViewCell.xib */; };
+		A98DE90520785A1C008E2279 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A98DE90420785A1C008E2279 /* CacheManager.m */; };
+		A9C0C86A207878B300BAFC79 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C0C868207878B300BAFC79 /* ImageViewController.m */; };
+		A9C0C86B207878B300BAFC79 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C0C869207878B300BAFC79 /* ImageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		A98DE8EC20785428008E2279 /* ImageDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98DE8F020785428008E2279 /* ImageDownloaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageDownloaderUITests.m; sourceTree = "<group>"; };
 		A98DE8F220785428008E2279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A98DE8FE2078559D008E2279 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		A98DE8FF2078559D008E2279 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		A98DE9002078559D008E2279 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		A98DE90320785A1C008E2279 /* CacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
+		A98DE90420785A1C008E2279 /* CacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
+		A9C0C867207878B200BAFC79 /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		A9C0C868207878B300BAFC79 /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		A9C0C869207878B300BAFC79 /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +114,23 @@
 		A98DE8CB20785428008E2279 /* ImageDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				A98DE8DB20785428008E2279 /* main.m */,
 				A98DE8CC20785428008E2279 /* AppDelegate.h */,
 				A98DE8CD20785428008E2279 /* AppDelegate.m */,
+				A98DE90320785A1C008E2279 /* CacheManager.h */,
+				A98DE90420785A1C008E2279 /* CacheManager.m */,
 				A98DE8CF20785428008E2279 /* ViewController.h */,
 				A98DE8D020785428008E2279 /* ViewController.m */,
+				A98DE8FE2078559D008E2279 /* CollectionViewCell.h */,
+				A98DE8FF2078559D008E2279 /* CollectionViewCell.m */,
+				A98DE9002078559D008E2279 /* CollectionViewCell.xib */,
+				A9C0C867207878B200BAFC79 /* ImageViewController.h */,
+				A9C0C868207878B300BAFC79 /* ImageViewController.m */,
+				A9C0C869207878B300BAFC79 /* ImageViewController.xib */,
 				A98DE8D220785428008E2279 /* Main.storyboard */,
-				A98DE8D520785428008E2279 /* Assets.xcassets */,
-				A98DE8D720785428008E2279 /* LaunchScreen.storyboard */,
 				A98DE8DA20785428008E2279 /* Info.plist */,
-				A98DE8DB20785428008E2279 /* main.m */,
+				A98DE8D720785428008E2279 /* LaunchScreen.storyboard */,
+				A98DE8D520785428008E2279 /* Assets.xcassets */,
 			);
 			path = ImageDownloader;
 			sourceTree = "<group>";
@@ -238,8 +259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C0C86B207878B300BAFC79 /* ImageViewController.xib in Resources */,
 				A98DE8D920785428008E2279 /* LaunchScreen.storyboard in Resources */,
 				A98DE8D620785428008E2279 /* Assets.xcassets in Resources */,
+				A98DE9022078559D008E2279 /* CollectionViewCell.xib in Resources */,
 				A98DE8D420785428008E2279 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C0C86A207878B300BAFC79 /* ImageViewController.m in Sources */,
 				A98DE8D120785428008E2279 /* ViewController.m in Sources */,
+				A98DE90520785A1C008E2279 /* CacheManager.m in Sources */,
 				A98DE8DC20785428008E2279 /* main.m in Sources */,
+				A98DE9012078559D008E2279 /* CollectionViewCell.m in Sources */,
 				A98DE8CE20785428008E2279 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
